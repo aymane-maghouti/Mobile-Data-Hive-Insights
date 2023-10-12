@@ -14,7 +14,7 @@
 
 
 
-## Overview
+## Project Overview
 
 This project demonstrates the process of extracting data from a MySQL database, transferring it using Apache Sqoop, storing it in Hive Data warehouse (the data actually is store in Hadoop Distributed File System (HDFS)), and performing analysis using Hive Query Language (Hive QL) (it is a language close to SQL). Then visualize the data  in Power BI, after connecting the hive datawarehouse to power BI.
 
@@ -27,7 +27,7 @@ This project demonstrates the process of extracting data from a MySQL database, 
 
 `Apache Hive`: Employed as the datawarehouse solution in this project, also for data processing and analysis using Hive Query Language(HiveQL).
 
-`Apache Derby`:   used ad embedded database for storing the Hive Metastore.
+`Apache Derby`:   used as embedded database for storing the Hive Metastore.
 
 `Hadoop Ecosystem (HDFS)`: the data, stored in hive datawarehouse, is actually stored in Hadoop Distributed File System (HDFS).
 
