@@ -16,7 +16,7 @@
 
 ## Overview
 
-This project demonstrates the process of extracting data from a MySQL database, transfer it using Apache Sqoop, storing it in Hive Data warehouse (the data actully is store in Hadoop Distributed File System (HDFS)), and performing analysis using Hive Query Language (Hive QL) (it is a language close to SQL). Then visualize the data  in Power BI, agter connecting the hive datawarehouse to power BI, to create the dashboard.
+This project demonstrates the process of extracting data from a MySQL database, transferring it using Apache Sqoop, storing it in Hive Data warehouse (the data actually is store in Hadoop Distributed File System (HDFS)), and performing analysis using Hive Query Language (Hive QL) (it is a language close to SQL). Then visualize the data  in Power BI, after connecting the hive datawarehouse to power BI.
 
 
 ## Technologies Used
@@ -25,14 +25,13 @@ This project demonstrates the process of extracting data from a MySQL database, 
 
 `Apache Sqoop`: Utilized for transferring data between MySQL and the Hadoop ecosystem. Batch integration mode was used for importing data from MySQL to Hive datawarehouse.
 
-`Apache Hive`: Employed as the datawarehouse solution in this project, also for data processing and analysis using Hive Query Language (HiveQL).
+`Apache Hive`: Employed as the datawarehouse solution in this project, also for data processing and analysis using Hive Query Language(HiveQL).
 
-`Apache Derby`: for the Metastore of the hive datawarehouse 
+`Apache Derby`:   used ad embedded database for storing the Hive Metastore.
 
-`Hadoop Ecosystem (HDFS)`:
-the data, stored in hive datawarehouse, is actually stored in Hadoop Distributed File System (HDFS).
+`Hadoop Ecosystem (HDFS)`: the data, stored in hive datawarehouse, is actually stored in Hadoop Distributed File System (HDFS).
 
-`Power BI`: Used for creating interactive visualizations and dashboard.
+`Power BI`: Used for creating interactive visualization and dashboard.
 
 
 
@@ -82,7 +81,6 @@ Mobile-Data-Hive-Insights:.
      start-yarn
      ```
 
-
    - Start the Apache Derby server using the command:
      ```
      StartNetWorkServer -h 0.0.0.0
@@ -105,7 +103,7 @@ Check for any errors during the data import process. If there are no errors, con
 
    - Launch Power BI and connect to the Hive data source to access the imported data.
 
-   - Build interactive visualizations, charts, and graphs based on the imported data.(or you can directly open the provided `.pbix` file)
+   - Build interactive visualization, charts, and graphs based on the imported data.(or you can directly open the provided `.pbix` file)
 
 
 With these steps completed, you have successfully set up the project, imported data from MySQL to the Hive data warehouse, and created interactive dashboards using Power BI. Enjoy exploring your data and gaining valuable insights!
